@@ -42,7 +42,7 @@ set(SRCS_UNITTEST
 
 set(CMAKE_CURRENT_BINARY_DIR ${CMAKE_BINARY_DIR})
 add_executable(${TESTNAME} ${SRCS_UNITTEST})
-target_link_libraries(${TESTNAME} GTest::gtest_main OpenSSL::SSL OpenSSL::Crypto)
+target_link_libraries(${TESTNAME} GTest::gtest_main OpenSSL::SSL OpenSSL::Crypto ${PROJECT_NAME})
 
 set(STARTUPPROJECT ${TESTNAME})
 
